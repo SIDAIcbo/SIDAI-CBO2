@@ -807,3 +807,112 @@
             }
 
         }
+/* PHOTO SECTION */
+.photo-section {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Photo title */
+.photo-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* PHOTO AREA */
+.peer-slider {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    height: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f2f2f2;
+}
+
+/* Images stay inside photo section */
+.peer-slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 100%;
+    animation: slideImages 24s infinite;
+}
+
+/* Timing */
+.peer-slider img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.peer-slider img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.peer-slider img:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.peer-slider img:nth-child(4) {
+    animation-delay: 9s;
+}
+
+.peer-slider img:nth-child(5) {
+    animation-delay: 12s;
+}
+
+.peer-slider img:nth-child(6) {
+    animation-delay: 15s;
+}
+
+.peer-slider img:nth-child(7) {
+    animation-delay: 18s;
+}
+
+.peer-slider img:nth-child(8) {
+    animation-delay: 21s;
+}
+
+/* Sliding animation */
+@keyframes slideImages {
+    0% {
+        left: 100%;
+    }
+
+    4% {
+        left: 0;
+    }
+
+    12% {
+        left: 0;
+    }
+
+    16% {
+        left: -100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .photo-section {
+        padding: 10px;
+    }
+
+    .peer-slider {
+        height: 300px;
+    }
+
+    .photo-section h2 {
+        font-size: 22px;
+    }
+}
