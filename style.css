@@ -911,7 +911,190 @@
     .peer-slider {
         height: 300px;
     }
+/* =========================================
+   DAY OF THE DEAF CELEBRATION
+========================================= */
 
+.day-of-deaf {
+    background: #ffffff;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.day-of-deaf h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* Description */
+
+.day-of-deaf p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+/* =========================================
+   PHOTO SLIDER
+========================================= */
+
+.day-of-deaf .peer-slider {
+    display: flex;
+    gap: 15px;
+
+    width: 100%;
+    height: 320px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    padding: 10px 5px 15px;
+    margin: 20px 0;
+}
+
+/* Individual photos */
+
+.day-of-deaf .peer-slider img {
+    flex: 0 0 300px;
+
+    width: 300px;
+    height: 290px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    display: block;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Photo hover */
+
+.day-of-deaf .peer-slider img:hover {
+    transform: scale(1.04);
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================
+   SLIDER SCROLLBAR
+========================================= */
+
+/* Chrome, Edge and Safari */
+
+.day-of-deaf .peer-slider::-webkit-scrollbar {
+    height: 9px;
+}
+
+.day-of-deaf .peer-slider::-webkit-scrollbar-track {
+    background: #eeeeee;
+    border-radius: 10px;
+}
+
+.day-of-deaf .peer-slider::-webkit-scrollbar-thumb {
+    background: #777777;
+    border-radius: 10px;
+}
+
+.day-of-deaf .peer-slider::-webkit-scrollbar-thumb:hover {
+    background: #444444;
+}
+
+/* Firefox */
+
+.day-of-deaf .peer-slider {
+    scrollbar-width: thin;
+}
+
+/* =========================================
+   TARGET
+========================================= */
+
+.day-of-deaf .target {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 768px) {
+
+    .day-of-deaf {
+        padding: 20px;
+    }
+
+    .day-of-deaf h2 {
+        font-size: 25px;
+    }
+
+    .day-of-deaf .peer-slider {
+        height: 260px;
+        gap: 12px;
+    }
+
+    .day-of-deaf .peer-slider img {
+        flex: 0 0 240px;
+
+        width: 240px;
+        height: 235px;
+    }
+}
+
+
+/* =========================================
+   MOBILE PHONES
+========================================= */
+
+@media (max-width: 480px) {
+
+    .day-of-deaf {
+        padding: 15px;
+        margin: 20px 0;
+    }
+
+    .day-of-deaf h2 {
+        font-size: 22px;
+    }
+
+    .day-of-deaf p {
+        font-size: 14px;
+    }
+
+    .day-of-deaf .peer-slider {
+        height: 210px;
+        gap: 10px;
+    }
+
+    .day-of-deaf .peer-slider img {
+        flex: 0 0 190px;
+
+        width: 190px;
+        height: 190px;
+
+        border-radius: 10px;
+    }
+}
     .photo-section h2 {
         font-size: 22px;
     }
