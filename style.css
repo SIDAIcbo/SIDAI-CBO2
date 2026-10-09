@@ -911,279 +911,525 @@
     .peer-slider {
         height: 300px;
     }
-/* =========================================
-   DAY OF THE DEAF CELEBRATION
-========================================= */
 
-.day-of-deaf {
-    background: #ffffff;
-    padding: 30px;
-    margin: 30px 0;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-}
-
-.day-of-deaf h2 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-
-/* Description */
-
-.day-of-deaf p {
-    font-size: 16px;
-    line-height: 1.7;
-    margin: 15px 0;
-}
-
-/* =========================================
-   PHOTO SLIDER
-========================================= */
-
-.day-of-deaf .peer-slider {
-    display: flex;
-    gap: 15px;
-
-    width: 100%;
-    height: 320px;
-
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    scroll-behavior: smooth;
-
-    padding: 10px 5px 15px;
-    margin: 20px 0;
-}
-
-/* Individual photos */
-
-.day-of-deaf .peer-slider img {
-    flex: 0 0 300px;
-
-    width: 300px;
-    height: 290px;
-
-    object-fit: cover;
-
-    border-radius: 12px;
-
-    display: block;
-
-    cursor: pointer;
-
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
-}
-
-/* Photo hover */
-
-.day-of-deaf .peer-slider img:hover {
-    transform: scale(1.04);
-
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-}
-
-/* =========================================
-   SLIDER SCROLLBAR
-========================================= */
-
-/* Chrome, Edge and Safari */
-
-.day-of-deaf .peer-slider::-webkit-scrollbar {
-    height: 9px;
-}
-
-.day-of-deaf .peer-slider::-webkit-scrollbar-track {
-    background: #eeeeee;
-    border-radius: 10px;
-}
-
-.day-of-deaf .peer-slider::-webkit-scrollbar-thumb {
-    background: #777777;
-    border-radius: 10px;
-}
-
-.day-of-deaf .peer-slider::-webkit-scrollbar-thumb:hover {
-    background: #444444;
-}
-
-/* Firefox */
-
-.day-of-deaf .peer-slider {
-    scrollbar-width: thin;
-}
-
-/* =========================================
-   TARGET
-========================================= */
-
-.day-of-deaf .target {
-    display: inline-block;
-
-    margin-top: 10px;
-
-    padding: 8px 15px;
-
-    border-radius: 20px;
-
-    font-weight: bold;
-
-    font-size: 14px;
-}
-
-
-/* =========================================
-   TABLETS
-========================================= */
-
-@media (max-width: 768px) {
-
-    .day-of-deaf {
-        padding: 20px;
-    }
-
-    .day-of-deaf h2 {
-        font-size: 25px;
-    }
-
-    .day-of-deaf .peer-slider {
-        height: 260px;
-        gap: 12px;
-    }
-
-    .day-of-deaf .peer-slider img {
-        flex: 0 0 240px;
-
-        width: 240px;
-        height: 235px;
-    }
-}
-
-
-/* =========================================
-   MOBILE PHONES
-========================================= */
-
-@media (max-width: 480px) {
-
-    .day-of-deaf {
-        padding: 15px;
-        margin: 20px 0;
-    }
-
-    .day-of-deaf h2 {
-        font-size: 22px;
-    }
-
-    .day-of-deaf p {
-        font-size: 14px;
-    }
-
-    .day-of-deaf .peer-slider {
-        height: 210px;
-        gap: 10px;
-    }
-
-    .day-of-deaf .peer-slider img {
-        flex: 0 0 190px;
-
-        width: 190px;
-        height: 190px;
-
-        border-radius: 10px;
-    }
-}
     .photo-section h2 {
         font-size: 22px;
     }
 }
-/* ================================
-   NUTRITION AND DIETETICS PROGRAM
-   ================================ */
+```css
+/* =================================
+   SIDAI CBO DONATION SECTION
+================================= */
 
-.program {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 15px;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+.donation-section {
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf8f1,
+            #f8fbf9
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
 }
 
-.program::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.donation-card {
+
     width: 100%;
-    height: 5px;
-    background: #2e7d32;
+
+    max-width: 680px;
+
+    background: #ffffff;
+
+    padding: 50px;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.10);
+
+    text-align: center;
+
 }
 
-.program:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+
+/* HEART */
+
+.donation-heart {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #e7f6ed;
+
+    color: #16834b;
+
+    font-size: 32px;
+
 }
 
-.program h3 {
-    color: #2e7d32;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    font-weight: 700;
+
+.donation-label {
+
+    display: block;
+
+    margin-top: 20px;
+
+    color: #16834b;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
 }
 
-.program p {
-    color: #555;
-    font-size: 1rem;
+
+.donation-card h2 {
+
+    margin: 10px 0 15px;
+
+    color: #173d29;
+
+    font-size: 38px;
+
+}
+
+
+.donation-description {
+
+    color: #68746d;
+
     line-height: 1.7;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* FORM */
+
+.donation-group {
+
+    text-align: left;
+
     margin-bottom: 20px;
+
 }
 
-.program .target {
-    display: inline-block;
-    background: #e8f5e9;
-    color: #1b5e20;
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 600;
+
+.donation-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 700;
+
+    color: #263c30;
+
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
 
-    .program {
-        padding: 20px;
-    }
+.donation-group select {
 
-    .program h3 {
-        font-size: 1.3rem;
-    }
+    width: 100%;
 
-    .program p {
-        font-size: 0.95rem;
-    }
+    padding: 15px;
+
+    border: 1px solid #d7e3dc;
+
+    border-radius: 10px;
+
+    background: white;
+
+    font-size: 16px;
+
+    outline: none;
+
 }
 
-@media (max-width: 480px) {
 
-    .program {
-        padding: 18px;
-    }
+.amount-input {
 
-    .program h3 {
-        font-size: 1.2rem;
-    }
+    display: flex;
 
-    .program p {
-        font-size: 0.9rem;
-    }
+    border: 1px solid #d7e3dc;
 
-    .program .target {
-        font-size: 0.8rem;
-    }
+    border-radius: 10px;
+
+    overflow: hidden;
+
 }
+
+
+.amount-input span {
+
+    padding: 15px 18px;
+
+    background: #f0f6f2;
+
+    color: #16834b;
+
+    font-weight: 800;
+
+}
+
+
+.amount-input input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    padding: 15px;
+
+    font-size: 18px;
+
+}
+
+
+/* QUICK AMOUNTS */
+
+.quick-amounts {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin: 20px 0;
+
+}
+
+
+.quick-amounts button {
+
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #cfe0d5;
+
+    background: #f8fbf9;
+
+    color: #16834b;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.quick-amounts button:hover {
+
+    background: #16834b;
+
+    color: #ffffff;
+
+}
+
+
+/* DONATE BUTTON */
+
+.donate-button {
+
+    width: 100%;
+
+    border: none;
+
+    padding: 17px;
+
+    border-radius: 10px;
+
+    background: #16834b;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.donate-button:hover {
+
+    background: #10683b;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(22, 131, 75, 0.25);
+
+}
+
+
+/* DETAILS */
+
+.donation-details {
+
+    display: none;
+
+    margin-top: 30px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #e4ece7;
+
+}
+
+
+.success-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e7f6ed;
+
+    color: #16834b;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+}
+
+
+.donation-details h3 {
+
+    margin: 15px 0 10px;
+
+    color: #173d29;
+
+}
+
+
+.selected-amount {
+
+    color: #16834b;
+
+    font-size: 32px;
+
+    font-weight: 900;
+
+    margin: 10px 0 25px;
+
+}
+
+
+/* ACCOUNT */
+
+.account-box {
+
+    background: #f4faf6;
+
+    border: 1px solid #dcebe1;
+
+    border-radius: 12px;
+
+    padding: 10px 20px;
+
+    text-align: left;
+
+}
+
+
+.account-title {
+
+    color: #16834b;
+
+    font-weight: 800;
+
+    padding: 12px 0;
+
+}
+
+
+.account-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 15px 0;
+
+    border-top: 1px solid #dce8df;
+
+}
+
+
+.account-row span {
+
+    color: #6c756f;
+
+}
+
+
+.account-row strong {
+
+    color: #173d29;
+
+}
+
+
+.instructions {
+
+    color: #68736d;
+
+    line-height: 1.6;
+
+    margin: 20px 0;
+
+}
+
+
+/* COPY BUTTON */
+
+.copy-button {
+
+    padding: 12px 20px;
+
+    border: 1px solid #16834b;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #16834b;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.copy-button:hover {
+
+    background: #16834b;
+
+    color: white;
+
+}
+
+
+/* CLOSE */
+
+.close-button {
+
+    display: block;
+
+    margin: 15px auto 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #777;
+
+    cursor: pointer;
+
+}
+
+
+/* SECURITY */
+
+.secure-message {
+
+    margin-top: 25px;
+
+    font-size: 13px;
+
+    color: #78827c;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .donation-section {
+
+        padding: 35px 15px;
+
+    }
+
+    .donation-card {
+
+        padding: 30px 20px;
+
+    }
+
+    .donation-card h2 {
+
+        font-size: 29px;
+
+    }
+
+    .quick-amounts {
+
+        flex-wrap: wrap;
+
+    }
+
+    .quick-amounts button {
+
+        min-width: 45%;
+
+    }
+
+    .account-row {
+
+        flex-direction: column;
+
+        gap: 5px;
+
+    }
+
+}
+```
