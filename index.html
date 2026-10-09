@@ -10,7 +10,7 @@
     <meta name="keywords"
           content="SIDAI CBO, Samburu, Maralal, Gender Equality, GBV, Youth Empowerment, Women Empowerment, Teen Mothers, Community Development">
 
-    <title>SIDAI CBO </title>
+    <title>SIDAI CBO</title>
     
 
     <link rel="stylesheet" href="style.css">
@@ -195,6 +195,7 @@
                         </a>
 
                     </div>
+                    
 
                 </div>
 
@@ -211,6 +212,221 @@
             </div>
 
         </section>
+        ```html
+<!-- ================================
+     SIDAI CBO WORLDWIDE DONATION
+================================ -->
+
+<section class="donation-section" id="donate">
+
+    <div class="donation-card">
+
+        <div class="donation-heart">♥</div>
+
+        <span class="donation-label">
+            SUPPORT SIDAI CBO
+        </span>
+
+        <h2>Make a Difference Today</h2>
+
+        <p class="donation-description">
+            Your generosity helps SIDAI CBO create awareness on the
+            rights of Persons with Disabilities, support vulnerable
+            communities and contribute towards the fight against
+            malnutrition.
+        </p>
+
+
+        <!-- Currency -->
+
+        <div class="donation-group">
+
+            <label for="donationCurrency">
+                Choose Currency
+            </label>
+
+            <select id="donationCurrency">
+
+                <option value="KES">
+                    🇰🇪 KES — Kenyan Shillings
+                </option>
+
+                <option value="USD">
+                    🇺🇸 USD — US Dollars
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Amount -->
+
+        <div class="donation-group">
+
+            <label for="donationAmount">
+                Donation Amount
+            </label>
+
+            <div class="amount-input">
+
+                <span id="currencyLabel">
+                    KES
+                </span>
+
+                <input
+                    type="number"
+                    id="donationAmount"
+                    min="1"
+                    step="0.01"
+                    placeholder="Enter any amount"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- Quick amounts -->
+
+        <div class="quick-amounts">
+
+            <button type="button" data-amount="10">
+                10
+            </button>
+
+            <button type="button" data-amount="25">
+                25
+            </button>
+
+            <button type="button" data-amount="50">
+                50
+            </button>
+
+            <button type="button" data-amount="100">
+                100
+            </button>
+
+        </div>
+
+
+        <!-- Continue -->
+
+        <button
+            type="button"
+            class="donate-button"
+            id="donateButton">
+
+            ♥ Donate Now
+
+        </button>
+
+
+        <!-- Donation Details -->
+
+        <div
+            class="donation-details"
+            id="donationDetails">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h3>Thank You for Supporting SIDAI CBO</h3>
+
+            <p>
+                Your selected donation:
+            </p>
+
+            <div
+                class="selected-amount"
+                id="selectedAmount">
+                KES 0
+            </div>
+
+
+            <!-- Account information -->
+
+            <div class="account-box">
+
+                <div class="account-title">
+                    SIDAI CBO Donation Account
+                </div>
+
+
+                <div class="account-row">
+
+                    <span>
+                        Account Name
+                    </span>
+
+                    <strong>
+                        SIDAI CBO
+                    </strong>
+
+                </div>
+
+
+                <div class="account-row">
+
+                    <span>
+                        Account Number
+                    </span>
+
+                    <strong>
+                        1354195051
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <p class="instructions">
+
+                Please use the account details above when
+                making your donation through your bank or
+                supported payment service.
+
+            </p>
+
+
+            <button
+                type="button"
+                class="copy-button"
+                id="copyAccount">
+
+                📋 Copy Account Number
+
+            </button>
+
+
+            <button
+                type="button"
+                class="close-button"
+                id="closeDonation">
+
+                Close
+
+            </button>
+
+        </div>
+
+
+        <div class="secure-message">
+
+            🔒 Secure donation information
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+```
+
 
 
 
@@ -498,18 +714,34 @@
                     <article class="program">
 
                         <h3>
-                            Inclusive Community Empowerment
+                            Community Empowerment
                         </h3>
 
                         <p>
-                            Conduct community forums, awareness campaigns 
-                            and dialogues that bring together persons with
-                            and without disabilities to promote inclusion, 
-                            human rights, gender equality and prevention of harmful practices.
+                            Conduct quarterly community forums
+                            to discuss gender rights, social
+                            inclusion and harmful practices.
                         </p>
 
                         <span class="target">
-                            Target: 500 participants annually
+                            Target: 500 participants per quarter
+                        </span>
+
+                    </article>
+                    <article class="program">
+
+                        <h3>
+                            Community Empowerment
+                        </h3>
+
+                        <p>
+                            Conduct quarterly community forums
+                            to discuss gender rights, social
+                            inclusion and harmful practices.
+                        </p>
+
+                        <span class="target">
+                            Target: 500 participants per quarter
                         </span>
 
                     </article>
@@ -518,20 +750,19 @@
                     <article class="program">
 
                         <h3>
-                         Inclusive Skills & Livelihoods
+                            Disability Inclusion & SRHR
                         </h3>
 
                         <p>
-                        Provide practical skills training,
-                        entrepreneurship, financial literacy 
-                        and income-generating opportunities for 
-                        youth, women and persons with disabilities,
-                        encouraging mixed participation and peer learning.
+                           Provide accessible SRHR education
+                           and support for children, youth and
+                           women with disabilities, promoting 
+                           informed choices, safety, dignity and 
+                           access to services.
                         </p>
 
                         <span class="target">
-                            Target: 100 participants annually
-                        </span>
+                            Target: 100 beneficiaries annually                        </span>
 
                     </article>
 
@@ -539,19 +770,19 @@
                     <article class="program">
 
                         <h3>
-                            Inclusive Youth & SRHR
+                            Disability Skills & Economic Empowerment
                         </h3>
 
                         <p>
-                            Conduct age-appropriate SRHR,
-                            life-skills and leadership sessions 
-                            for young people with and without disabilities, 
-                            using accessible approaches such as sign language, 
-                            visual materials and peer education..
+                            Provide practical skills,
+                           entrepreneurship training and livelihood
+                           opportunities to promote economic independence
+                           among persons with disabilities.
                         </p>
 
                         <span class="target">
-                            300 young people annually
+                            Target: 50 PWDs annually
+                            Inclusive Advocacy & Accessibility
                         </span>
 
                     </article>
@@ -578,18 +809,22 @@
 
                     <article class="program">
 
-                        <h2>Peer-to-Peer Counselling</h2>
 
-                 <div class="peer-slider">
-                 <img src="images/peer1.jpeg" alt="Peer-to-Peer Counselling">
-                 <img src="images/peer2.jpeg" alt="Peer-to-Peer Counselling">
-                 <img src="images/peer3.jpeg" alt="Peer-to-Peer Counselling">
-                 <img src="images/peer4.jpeg" alt="Peer-to-Peer Counselling">
-                 <img src="images/peer5.jpeg" alt="Peer-to-Peer Counselling">
-                 <img src="images/peer6.jpeg" alt="Peer-to-Peer Counselling">
-                 <img src="images/peer7.jpeg" alt="Peer-to-Peer Counselling">
-                 <img src="images/peer8.jpeg" alt="Peer-to-Peer Counselling">
-                 </div>
+                        <h2>
+                            Peer-to-Peer Counselling 
+                        </h2>
+                        <section class="photo-section"></section>
+    <div class="peer-slider">
+        <img src="images/peer1.jpeg" alt="Peer-to-Peer Counselling">
+        <img src="images/peer2.jpeg" alt="Peer-to-Peer Counselling">
+        <img src="images/peer3.jpeg" alt="Peer-to-Peer Counselling">
+        <img src="images/peer4.jpeg" alt="Peer-to-Peer Counselling">
+        <img src="images/peer5.jpeg" alt="Peer-to-Peer Counselling">
+        <img src="images/peer6.jpeg" alt="Peer-to-Peer Counselling">
+        <img src="images/peer7.jpeg" alt="Peer-to-Peer Counselling">
+        <img src="images/peer8.jpeg" alt="Peer-to-Peer Counselling">
+    </div>
+</section>
 
                         <p>
                             Train peer counsellors in basic
@@ -601,62 +836,35 @@
                             Target: 30 peer counsellors/year
                         </span>
 
-                    </article><article class="program">
-
-    <h2>Making important days</h2>
-
-    <div class="peer-slider">
-        <img src="images/DF1.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF2.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF3.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF4.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF5.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF6.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF7.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF8.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF9.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF10.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF11.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF12.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF13.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF14.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF15.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF16.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF17.jpeg" alt="Day of the Deaf Celebration">
-        <img src="images/DF18.jpeg" alt="Day of the Deaf Celebration">
-    </div>
-
-    <p>
-        Celebrate the Day of the Deaf by creating awareness,
-        promoting inclusion, and advocating for the rights,
-        dignity, and participation of Deaf people in society.
-    </p>
-
-    <span class="target">
-        Target: Deaf community, families, stakeholders and the public
-    </span>
-</article>
-          <article class="program">
-
-    <h3>
-        Nutrition and Dietetics
-    </h3>
-
-    <p>
-        Promote healthy nutrition and improve access to balanced diets
-        through nutrition education, dietary counselling, food support,
-        and community awareness programs for children, families,
-        persons with disabilities, and vulnerable communities.
-    </p>
-
-    <span class="target">
-        Target: 100 families annually
-    </span>
-
-</article>
+                    </article>
 
 
-<br/>
+                    <article class="program">
+
+                        <h3>
+                            Widow Empowerment
+                        </h3>
+
+                        <p>
+                            Support economic empowerment through
+                            small grants, savings groups and
+                            entrepreneurship mentorship.
+                        </p>
+
+                        <span class="target">
+                            Target: 100 widows annually
+                        </span>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
 
         <!-- ==============================
              IMPACT SECTION
